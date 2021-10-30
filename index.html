@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   
+  </head>
+
+  <body>
+    <header id="header">
+      <center>
+        <img id="header-img" src="https://1000marcas.net/wp-content/uploads/2020/03/logo-Hohner.png" width="560" height="315"/>
+        <nav id="nav-bar">
+          <a class="nav-link" href="#learn-more">Learn More</a>
+          <a class="nav-link" href="#request-coupon">Request Coupon</a>
+          <a class="nav-link" href="#buy-on-amazon">Buy at Online Store</a>
+        </nav>
+      </center>
+    </header>
+    <section id="learn-more">
+      <center>
+        <h1>For sale Hohner Panthers NEW GOOD PRICE !!!</h1>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/watch?v=x1rdylTRFG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </center>
+    </section>
+    <section id="request-coupon">
+      <center>
+        <h2>Request a Coupon</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input id="email" type="email" placeholder="you@whatever.com" name="email"></input>
+          <input id="submit" type="submit"></input>
+        </form>
+      </center>
+    </section>
+    <section id="buy-on-amazon">
+      <div class="flex-container">
+        <div><a href="amazon-affiliate-link">Buy on Amazon</a></div>
+        <div><a href="Mercado Libre-affiliate-link">Buy on Mercado Libre</a></div>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</html>
